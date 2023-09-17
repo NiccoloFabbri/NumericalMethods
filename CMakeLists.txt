@@ -18,4 +18,5 @@ add_executable(HW3
         Options/Payoff.h
         Options/AmericanOption.h
         Options/AmericanOption.cpp
+        Trees/AlternativeMethods.cpp
 )

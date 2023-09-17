@@ -5,7 +5,7 @@
 #ifndef MTH9821_NUMERICALMETHODS_BINOMIALTREE_H
 #define MTH9821_NUMERICALMETHODS_BINOMIALTREE_H
 #include "../Options/Option.h"
-
+#include <iostream>
 
 // Tree result -> visualize output
 struct TreeResult{

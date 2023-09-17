@@ -68,8 +68,6 @@ std::vector<std::vector<double>> BinomialTree::StandardPrice(){
 
 
 
-
-
 // PATH INDEPENDENT (EUROPEAN OPTION)
 std::vector<std::vector<double>> BinomialTree::PathIndepPricer(std::vector<std::vector<double>> prices) {
 

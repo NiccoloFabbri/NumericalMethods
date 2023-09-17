@@ -4,6 +4,7 @@
 #include "Options/EuropeanOption.h"
 #include "Options/AmericanOption.h"
 #include "Trees/BinomialTree.h"
+#include "Trees/AlternativeMethods.h"
 #include <iomanip>
 
 
@@ -35,6 +36,9 @@ int  main() {
     std::cout << binomialTree.execute(PricingMethod::Standard) << std::endl;
 
 
+
+    TreeResult resav = AverageTreePricer(&putOptEurop, 10);
+    std::cout << resav << std::endl;
     //BinomialTree binomialTree1(&putOptEurop, 10);
     //std::vector<std::vector<double>> p1 = binomialTree1.price();
     //print2DVector(p1);
@@ -52,7 +56,5 @@ int  main() {
     //}
 
 
-    //std::cout << p << std::endl;
-    //std::cout << "Diff: " << std::abs(p - BSPrice)<< std::endl;
     return 0;
 }
