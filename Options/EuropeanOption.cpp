@@ -21,3 +21,5 @@ double EuropeanOption::price() const {
 double EuropeanOption::getPayoff(double spot) const {
     return (*payoff_)(spot); // use payoff class
 }
+
+bool EuropeanOption::isAmerican() const { return false;}

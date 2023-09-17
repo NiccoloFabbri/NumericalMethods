@@ -14,6 +14,7 @@ public:
     using Option::Option;
     double price() const override;
     double getPayoff(double spot) const override;
+    bool isAmerican() const override;
 };
 
 

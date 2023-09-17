@@ -16,4 +16,6 @@ add_executable(HW3
         Trees/BinomialTree.cpp
         Options/EuropeanOption.cpp
         Options/Payoff.h
+        Options/AmericanOption.h
+        Options/AmericanOption.cpp
 )

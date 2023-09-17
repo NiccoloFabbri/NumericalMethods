@@ -19,4 +19,5 @@ public:
     Option(double S0, double K, double T, double sigma, double r, double q, OptionType type);
     virtual double price() const = 0;
     virtual double getPayoff(double spot) const = 0;
+    virtual bool isAmerican() const = 0;
 };
